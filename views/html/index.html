@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan XSS</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+   <form action="/" method="post">
+        <label for="send">XSS Method form POST Input</label>
+        <input type="text" id="send" name="send">
+    <button type="submit">Submit</button>
+   </form>
+{{.Nasgor}}
+<h1>{{.Data}}</h1>
+</body>
+</html>

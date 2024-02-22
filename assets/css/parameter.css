@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: cursive;
+    flex-direction: column;
+}
+
+.bulat {
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    margin-top: 5rem;
+    border-radius: 50%;
+    border-right: 1rem solid rgb(66, 61, 61);
+    animation: muter 1s infinite ease-in;
+}
+
+@keyframes muter {
+    0% {
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
